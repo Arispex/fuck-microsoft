@@ -1,18 +1,98 @@
 # Microsoft 垃圾产品质量 / BUG 集锦
 
-Microsoft 我操你妈逼
+> "The only problem with Microsoft is they just have no taste" - Steve Jobs
+>
+> "微软的问题就在于他们没有品位" - 乔布斯
 
-## Microsoft Edge 卡死 by [Arispex](https://github.com/Arispex)
+## Dev Home 无法克隆除 GitHub 以外需要授权的 Repository
+
+这个程序无法使用 SSH 的方式对仓库进行克隆，因此部分企业中强制要求进行 SSH Clone 方式的仓库均无法使用。
+
+不仅如此，还有很多需要验证的，GitHub 之外的仓库。Dev Home 最终在克隆的时候都让你登录 GitHub，然后显示你没有该仓库的权限。
+
+超级差的体验
+
+![Dev Home](assets/DevHome.png)
+
+## Xbox 下载页面暂停按钮图标位移
+
+又是位移
+
+![](assets/XboxDownloadPauseDisplacement.png)
+
+## Xbox 的奇妙按钮排版设计
+
+好丑，微软没有任何美感的傻逼设计师真把自己当设计师了
+
+![](assets/XboxButton.png)
+
+## Microsoft Teams 图片 icon 出现位移
+
+![](assets/TeamsPictureIconDisplacement.png)
+
+## Microsoft Teams 切换标签页失效 & 文件标签页随机出现无文件情况
+
+从文件切换到聊天很可能切换不过来。并且随机出现文件列表显示为空的情况
+
+![](assets/MSTeamsTabsAndFiles.gif)
+
+## Microsoft Teams 无法关闭 Mini 窗口
+
+如标题，无法关闭 Mini 窗口。（首次打开 Teams 可以关闭 Mini 窗口，后面就无法关闭了，只能通过任务栏将该窗口关闭）
+
+![](assets/MSTeamsNotClosing.gif)
+
+## Windows 切换 Desktop 时就可以触发 Taskbar 的软件 Icon 随机消失的问题
+
+太他妈傻逼了微软
+
+![](assets/Taskbar%20Bug.gif)
+
+## Windows 自带的 Emoji 输入功能有许多 Unicode 字符残缺
+
+虽然我知道 Windows 的 Emoji 无法输入旗帜类型的 Emoji。但是我今天在找中指 Emoji 的时候我也找不到。
+
+Windows 你的 Emoji 输入有个鸡巴用 😁
+
+Windows:
+
+![16ab8e275d5d2df321da26836101c5d9.png](https://s2.loli.net/2023/11/07/NolvkHBrsSEumOX.png)
+
+![463b9ffbd32bcc0350f052ed3a9be24e.png](https://s2.loli.net/2023/11/07/17vti5BMcpLjAXT.png)
+
+![3321eb526eef3f27bb1cd50ca6d154af.png](https://s2.loli.net/2023/11/07/LUTYyrxfeS6VPQR.png)
+
+Apple:
+
+![159431a3a61f8bc6c971ea8e67e868a2.png](https://s2.loli.net/2023/11/07/lxoredUgvyawG5m.jpg)
+
+![39d9a31cf8eb5823ae14f4c32c53acd2.png](https://s2.loli.net/2023/11/07/whiyBYEGe5KrNlC.jpg)
+
+## Microsoft Account Passkeys 后续: 不，微软不支持 Passkeys
+
+![e997c6ca8b95c28da156fe51ddeba15a.png](https://s2.loli.net/2023/11/07/gDRUfVZw5Ko79cl.jpg)
+
+![f8e9228e779fccb55296387fd65a4724.png](https://s2.loli.net/2023/11/07/WkQMY32qKPGdioZ.png)
+
+实测移动设备上根本无法使用密钥 (Passkeys) 方式登录，这也说明了为什么 Microsoft Account 在设置 Passkeys 时没有明显标识。
+
+## Microsoft Account ~~支持 Passkeys 但没有明确标识~~ 不支持 Passkeys
+
+![image.png](https://s2.loli.net/2023/11/07/iKhabcrj2NvuJAd.png)
+
+虽然理论上走的 FIDO 标准没错但是谁会想到藏到这种地方啊...
+
+右下角版权时间写的 2020 BTW，这破页面也有 3 年没更新了。麻烦傻逼微软更进一下好吗？
+
+## [Microsoft Edge 卡死](https://github.com/JimmyRice/fuck-microsoft/pull/3) by [Arispex](https://github.com/Arispex)
 
 突然卡死，退出重开无效
 
-<img width="685" alt="Snipaste_2023-11-04_21-18-38" src="https://github.com/Arispex/fuck-microsoft/assets/67822718/b27e8c28-cc65-4479-ae02-5989d6e256ce">
+![Image](https://github.com/Arispex/fuck-microsoft/assets/67822718/b27e8c28-cc65-4479-ae02-5989d6e256ce)
 
+## [Windows 任务管理器显示异常](https://github.com/JimmyRice/fuck-microsoft/pull/3) by [Arispex](https://github.com/Arispex)
 
-## Windows 任务管理器显示异常 by [Arispex](https://github.com/Arispex)
-
-<img width="526" alt="Snipaste_2023-11-04_21-16-56" src="https://github.com/Arispex/fuck-microsoft/assets/67822718/a9932eb9-d557-467a-8616-1dd8fd85e88c">
-
+![Image](https://github.com/Arispex/fuck-microsoft/assets/67822718/a9932eb9-d557-467a-8616-1dd8fd85e88c)
 
 ## Microsoft Loop 傻逼级别的机翻
 
@@ -61,7 +141,7 @@ Microsoft 我操你妈逼
 
 ![image.png](https://s2.loli.net/2023/10/31/Bq1AFxRt28bzDTi.png)
 
-## Windows 开始菜单中软件图标消失 by [Seamain](https://github.com/Seamain)
+## [Windows 开始菜单中软件图标消失](https://github.com/JimmyRice/fuck-microsoft/pull/2) by [Seamain](https://github.com/Seamain)
 
 ![image](https://i.imgur.com/QlKDY0g.png)
 
