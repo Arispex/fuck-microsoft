@@ -226,3 +226,7 @@ Apple:
 ![image.png](https://s2.loli.net/2023/10/14/tJ5qIvuM3kHDTmi.png)
 
 刚开始以为是我个人的问题，Google 后发现碰上的人不少
+
+## Windows 11 文件资源管理器右键无法弹出菜单
+
+![千亦 2024-08-08 20 14 22](https://github.com/user-attachments/assets/4be8580f-5fce-4a86-bed0-5ded168e6c2b)
